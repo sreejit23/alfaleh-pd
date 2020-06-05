@@ -10,7 +10,7 @@ class VideoCamera(object):
         # Using OpenCV to capture from device 0. If you have trouble capturing
         # from a webcam, comment the line below out and use a video file
         # instead.
-        self.video = cv2.VideoCapture(0) #"/dev/video1"
+        self.video = cv2.VideoCapture("/dev/video1") #"/dev/video1"
         self.video.set(3, 400)
         self.video.set(4, 560)
         # If you decide to use video.mp4, you must have this file in the folder
